@@ -1,0 +1,130 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "CoreLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/CoreLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CoreLibrary.dll": {}
+        }
+      },
+      "FrameworkLibrary/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/FrameworkLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FrameworkLibrary.dll": {}
+        }
+      },
+      "StandardLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/StandardLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StandardLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CoreLibrary/1.0.0": {
+      "type": "project",
+      "path": "../CoreLib/CoreLibrary.csproj",
+      "msbuildProject": "../CoreLib/CoreLibrary.csproj"
+    },
+    "FrameworkLibrary/1.0.0": {
+      "type": "project",
+      "path": "../FrameworkLib/FrameworkLibrary.csproj",
+      "msbuildProject": "../FrameworkLib/FrameworkLibrary.csproj"
+    },
+    "StandardLibrary/1.0.0": {
+      "type": "project",
+      "path": "../StandardLibrary/StandardLibrary.csproj",
+      "msbuildProject": "../StandardLibrary/StandardLibrary.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "CoreLibrary >= 1.0.0",
+      "FrameworkLibrary >= 1.0.0",
+      "StandardLibrary >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\evolu\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\evolu\\source\\repos\\Section7\\Class Library Project Types\\Library0\\ClassLibraryDemoApp\\ConsoleUI\\ConsoleUI.csproj",
+      "projectName": "ConsoleUI",
+      "projectPath": "C:\\Users\\evolu\\source\\repos\\Section7\\Class Library Project Types\\Library0\\ClassLibraryDemoApp\\ConsoleUI\\ConsoleUI.csproj",
+      "packagesPath": "C:\\Users\\evolu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\evolu\\source\\repos\\Section7\\Class Library Project Types\\Library0\\ClassLibraryDemoApp\\ConsoleUI\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\evolu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\evolu\\source\\repos\\Section7\\Class Library Project Types\\Library0\\ClassLibraryDemoApp\\CoreLib\\CoreLibrary.csproj": {
+              "projectPath": "C:\\Users\\evolu\\source\\repos\\Section7\\Class Library Project Types\\Library0\\ClassLibraryDemoApp\\CoreLib\\CoreLibrary.csproj"
+            },
+            "C:\\Users\\evolu\\source\\repos\\Section7\\Class Library Project Types\\Library0\\ClassLibraryDemoApp\\FrameworkLib\\FrameworkLibrary.csproj": {
+              "projectPath": "C:\\Users\\evolu\\source\\repos\\Section7\\Class Library Project Types\\Library0\\ClassLibraryDemoApp\\FrameworkLib\\FrameworkLibrary.csproj"
+            },
+            "C:\\Users\\evolu\\source\\repos\\Section7\\Class Library Project Types\\Library0\\ClassLibraryDemoApp\\StandardLibrary\\StandardLibrary.csproj": {
+              "projectPath": "C:\\Users\\evolu\\source\\repos\\Section7\\Class Library Project Types\\Library0\\ClassLibraryDemoApp\\StandardLibrary\\StandardLibrary.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
